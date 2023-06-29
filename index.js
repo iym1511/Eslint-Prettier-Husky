@@ -4,4 +4,4 @@
 
 const hello = 'world';
 
-const bye = 'world';
+var bye = 'world';
