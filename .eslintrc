@@ -28,9 +28,16 @@
 // npx husky install : husky에 등록된 hook을 실제 .git에 적용시키기 위한 스크립트
 
 // husky 라는 package에서 add라는 명령어를 실행하고 .husky/pre-commit 파일에서 npm run format이라는 내용을 추가할거야
+// npx husky add .husky/pre-commit "npm run format"
 // commit 전에 format 실행 한다는것
 // 그럼 husky 폴더에 pre-commit 생김
 // pre-commit 안에서
 // echo "Pre commit run" 해주고
 // git add . > git commit -m "커밋내용" 을 해주면
 // Pre commit run 이라고 실행되면서 출력이됬다.
+// 테스트용으로 적었던 Pre commit run 을 지우고 npm run format을 해주면
+// git commit과 동시에 prettier가 작동된다.
+
+// push에 lint 적용하기
+// npx husky add .husky/pre-push "npm run lint"
+
