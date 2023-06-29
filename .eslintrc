@@ -40,4 +40,3 @@
 
 // push에 lint 적용하기
 // npx husky add .husky/pre-push "npm run lint"
-

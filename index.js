@@ -2,6 +2,6 @@
 
 'ASD';
 
-const hello = 'world';
+var hello = 'world';
 
-var bye = 'world';
+const bye = 'world';
