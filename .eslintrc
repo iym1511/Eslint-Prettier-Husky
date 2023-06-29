@@ -40,3 +40,5 @@
 
 // push에 lint 적용하기
 // npx husky add .husky/pre-push "npm run lint"
+// 마찬가지로 husky 안에 pre-push 폴더가 생겨서 push될때 eslint가 검사되면서
+// 올바르지않은 조건이 코드에있으면 오류를 띄우며 push 가 이루어지지 않는다.
