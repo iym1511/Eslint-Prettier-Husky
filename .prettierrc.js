@@ -1,5 +1,5 @@
 module.exports = {
-  printWidth: 20, // 한줄에 몇줄만큼 쓸건지
+  printWidth: 100, // 한줄에 몇줄만큼 쓸건지
   singleQuote: true, // "" 아님 '' 뭐쓸건지 true = ''
   arrowParens: 'avoid', //  arrow function parameter가 하나일 경우 괄호 생략
 };
