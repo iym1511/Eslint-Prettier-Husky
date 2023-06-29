@@ -1,0 +1,33 @@
+{
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "no-var": "error" // var 금지
+  }
+}
+
+// eslint 검사
+// npx eslint .
+// var 를 const로 고쳐도 에러나는이유가 const는 es6에서 새로생겨난것이기떄문에
+// es6문법이 사용가능하다는것을 알려줘야함
+
+// 자동화 이슈
+// eslint prettier 매번 npx 할수없으니 자동화 해야함! 이름은 Husky
+// commit 된 코드는 무조건 formatting
+// push된 코드는 무조건 eslint가 pass된 상태에서 push가 되도록 자동화 구축
+
+// git hook 도입
+// git 에서 특정 이벤트 발생하기 전,후로 특정 hook 동작을 실행할 수 있게 하는것(ex. commit,push)
+
+// husky
+// git hook 설정을 도와주는 npm package
+// husky를 통해서 pre-commit, pre-push hook
+// npm install husky --save-dev
+// 처음 husky세팅하는 사람만 실행 필요 : npx husky install
+// npx husky install : husky에 등록된 hook을 실제 .git에 적용시키기 위한 스크립트
+
+
+// husky 라는 package에서 add라는 명령어를 실행하고 .husky/pre-commit 파일에서 npm run format이라는 내용을 추가할거야
+// commit 전에 format 실행 한다는것
+// 그럼 husky 폴더에 pre-commit 생김
